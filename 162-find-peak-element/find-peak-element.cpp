@@ -2,7 +2,7 @@ class Solution {
 public:
     int findPeakElement(vector<int>& arr) {
       int low=0,high=arr.size()-1;
-      int res=-1;
+      
       while(low<high){
         int mid = low+(high-low)/2;
         if(arr[mid]<arr[mid+1]){
